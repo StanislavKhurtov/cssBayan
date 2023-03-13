@@ -131,7 +131,7 @@ letter-spacing: 0.1em;
 	height: 4%;
 	transition: fill 0.2s ease-in-out;
 	transform: rotate(0);
-	fill: transparent;
+	/*fill: transparent;*/
 }
 
 .accordion__input {
@@ -164,21 +164,24 @@ letter-spacing: 0.1em;
 	align-items: center;
 	justify-content: center;
 }
-@media (min-width:310px){
+
+
+@media (width > 310px){
 	.header__title {
 		font-size: 1.5rem;
 	}
 
 	.accordion__title {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 
 	.accordion__icon {
-		width: 2%;
-		height: 2%;
+		width: 3%;
+		height: 3%;
+
 	}
 	.footer__text {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 
 	[class*="__container"] {
@@ -189,7 +192,17 @@ letter-spacing: 0.1em;
 	}
 }
 
-@media (min-width:810px){
+.accordion:hover .accordion__icon {
+	transition: fill 0.2s ease-in-out;
+	fill: #000;
+}
+.accordion__label:hover .accordion__icon {
+	transition: transform 0.2s ease;
+	transform: rotate(45deg);
+}
+
+
+@media (width > 810px){
 	.header__title {
 		font-size: 2rem;
 	}
@@ -201,6 +214,7 @@ letter-spacing: 0.1em;
 	.accordion__icon {
 		width: 2%;
 		height: 2%;
+		fill: transparent;
 	}
 	.footer__text {
 		font-size: 1.5rem;
@@ -240,7 +254,7 @@ letter-spacing: 0.1em;
 	}
 }
 
-@media (min-width:1800){
+@media (width > 1800){
 	.header__title {
 		font-size: 3rem;
 	}
